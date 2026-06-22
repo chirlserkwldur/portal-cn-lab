@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华体会 · 稳定入口与平台说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #fdf6ec 0%, #fce4d6 45%, #f8d5c0 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.2rem;
+      line-height: 1.6;
+      color: #3e2c1e;
+    }
+
+    .container {
+      max-width: 980px;
+      width: 100%;
+    }
+
+    /* Hero 区域 */
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      background: rgba(255, 245, 235, 0.7);
+      backdrop-filter: blur(4px);
+      border-radius: 64px 64px 32px 32px;
+      box-shadow: 0 10px 30px rgba(140, 80, 40, 0.08);
+      margin-bottom: 2.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 350;
+      letter-spacing: 0.02em;
+      color: #5d3a22;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero h1 strong {
+      font-weight: 520;
+      background: linear-gradient(145deg, #b76e3a, #8f522e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.22rem;
+      color: #5f4432;
+      max-width: 600px;
+      margin: 0 auto 0.8rem;
+      opacity: 0.85;
+    }
+
+    .hero .tagline {
+      display: inline-block;
+      background: #ffffffc0;
+      backdrop-filter: blur(4px);
+      padding: 0.4rem 1.8rem;
+      border-radius: 40px;
+      font-size: 0.95rem;
+      color: #7a5b40;
+      border: 1px solid #e3cdb8;
+      margin-top: 1rem;
+    }
+
+    /* 卡片通用 */
+    .card {
+      background-color: #ffffffdd;
+      backdrop-filter: blur(3px);
+      border-radius: 40px;
+      padding: 2.4rem 2.6rem;
+      box-shadow: 0 12px 28px rgba(120, 70, 30, 0.06);
+      margin-bottom: 2.2rem;
+      transition: box-shadow 0.2s;
+      border: 1px solid #f3e0cf;
+    }
+
+    .card:hover {
+      box-shadow: 0 18px 36px rgba(140, 80, 35, 0.08);
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 370;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.4rem;
+      color: #4f331f;
+      border-left: 5px solid #c2824b;
+      padding-left: 1.2rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .feature-item {
+      padding: 0.2rem 0 0.4rem 0;
+    }
+
+    .feature-item h3 {
+      font-size: 1.2rem;
+      font-weight: 460;
+      margin-bottom: 0.3rem;
+      color: #6c482c;
+    }
+
+    .feature-item p {
+      font-size: 0.98rem;
+      color: #5e4634;
+      opacity: 0.85;
+    }
+
+    .desc-text {
+      font-size: 1.06rem;
+      color: #4f3929;
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      color: #5b3f2b;
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1.04rem;
+    }
+
+    .faq-answer {
+      font-size: 0.98rem;
+      color: #5e4a3a;
+      padding-left: 0.6rem;
+      border-left: 2px solid #dcb69b;
+      opacity: 0.85;
+    }
+
+    .inline-link {
+      color: #9b653c;
+      text-decoration: none;
+      font-weight: 470;
+      border-bottom: 2px solid #e5cbb5;
+      padding-bottom: 0.08rem;
+      transition: border-color 0.2s, color 0.2s;
+      border-radius: 0 0 6px 6px;
+    }
+
+    .inline-link:hover {
+      border-bottom-color: #b47a4f;
+      color: #754e2e;
+    }
+
+    .bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem 3.5rem;
+      padding: 2rem 1rem 1rem;
+      margin-top: 0.2rem;
+      border-top: 1px solid #e7d2bf;
+    }
+
+    .bottom-links a {
+      color: #6b4e36;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 40px;
+      background: #f7ede3;
+      transition: background 0.2s, color 0.15s;
+      border: 1px solid #e5cfbb;
+    }
+
+    .bottom-links a:hover {
+      background: #efe0d0;
+      color: #4d3321;
+    }
+
+    .disclaimer {
+      text-align: center;
+      margin-top: 1.8rem;
+      font-size: 0.85rem;
+      color: #7b6453;
+      opacity: 0.6;
+      letter-spacing: 0.3px;
+    }
+
+    .faq-summary-note {
+      font-size: 0.95rem;
+      margin-top: 1rem;
+      color: #775f4b;
+      border-top: 1px dashed #dcc9b8;
+      padding-top: 1.2rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 680px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+
+      .card {
+        padding: 1.8rem 1.4rem;
+        border-radius: 32px;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+        padding-left: 0.8rem;
+      }
+
+      .bottom-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .hero {
+        padding: 2.5rem 1rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>了解 <strong>华体会</strong> 的稳定入口</h1>
+      <p>一个持续运转的平台，往往需要清晰的落脚点。这里从页面说明出发，帮助新老朋友更从容地理解当前环境。</p>
+      <div class="tagline">✦ 落地页 · 说明与指引 ✦</div>
+    </section>
+
+    <!-- 优势区：稳定 & 认知 -->
+    <section class="card">
+      <h2 class="section-title">为什么关注“稳定入口”</h2>
+      <div class="grid-2">
+        <div class="feature-item">
+          <h3>持续可用的地址</h3>
+          <p>网络环境时常变化，一个可靠且更新及时的入口能减少寻找成本。<a href="https://sports2-hthsports.com" class="inline-link">华体会</a> 在这方面保持着相对稳定的访问路径。</p>
+        </div>
+        <div class="feature-item">
+          <h3>信息透明的页面</h3>
+          <p>许多平台隐藏了版本或说明页，而这里更倾向于让用户直接看到内容结构，减少不必要的跳转疑惑。</p>
+        </div>
+        <div class="feature-item">
+          <h3>减少中间环节</h3>
+          <p>从入口到内容，中间链路越短，体验越平顺。这也是许多用户选择固定入口的原因。</p>
+        </div>
+        <div class="feature-item">
+          <h3>适合长期使用</h3>
+          <p>如果日常需要访问某些服务，保留一个认知成本低的入口会省去大量重复操作。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：平台理解 & 场景 -->
+    <section class="card">
+      <h2 class="section-title">页面说明 · 一些背景</h2>
+      <div class="desc-text">
+        <p>很多朋友第一次接触 <strong>华体会</strong> 时，会好奇它的结构是否清晰。实际上，这个页面正是为了展示一个稳定的叙述点——不堆砌功能，而是把“如何理解当前页面”放在前面。</p>
+        <p style="margin-top: 0.8rem;">比如，你正在阅读的这段文字属于一个落地介绍页，它不替代主站，而是作为了解与过渡的辅助页。当你准备好时，可以通过下方的链接直接到达主站。</p>
+      </div>
+      <div style="background: #f7ede2; border-radius: 28px; padding: 1.2rem 1.6rem; margin-top: 0.6rem;">
+        <p style="font-size: 0.98rem; color: #5f4735;">一个简单的建议：如果你需要经常浏览，不妨把当前这个页面收藏起来，或者记住 <a href="https://sports2-hthsports.com" class="inline-link">华体会</a> 这个标识，方便后续习惯性使用。</p>
+      </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section class="card">
+      <h2 class="section-title">常见疑问摘要</h2>
+      <div class="faq-item">
+        <span class="faq-question">▸ 这个页面是华体会主站吗？</span>
+        <div class="faq-answer">不是。这是一个介绍与说明页，帮助理解平台特性与访问方式。主站入口通过页面中的链接可直达。</div>
+      </div>
+      <div class="faq-item">
+        <span class="faq-question">▸ 为什么强调“稳定入口”？</span>
+        <div class="faq-answer">因为网络访问存在不确定性，有一个固定且更新及时的入口描述页，能减少每次寻找的时间和困惑。</div>
+      </div>
+      <div class="faq-item">
+        <span class="faq-question">▸ 内容会不会经常变？</span>
+        <div class="faq-answer">页面结构和核心说明会保持长期可用，细节可能随环境微调，但基调始终是克制、清晰的叙述风格。</div>
+      </div>
+      <div class="faq-summary-note">
+        📌 更多细节可以访问 <a href="https://sports2-hthsports.com" class="inline-link">华体会</a> 直接体验，那里有更完整的界面。
+      </div>
+    </section>
+
+    <!-- 底部链接区 -->
+    <footer class="bottom-links">
+      <a href="https://sports2-hthsports.com">华体会</a>
+      <a href="#" style="pointer-events: none; opacity: 0.5;">服务说明</a>
+      <a href="#" style="pointer-events: none; opacity: 0.5;">常见问题</a>
+      <a href="#" style="pointer-events: none; opacity: 0.5;">环境指南</a>
+    </footer>
+
+    <div class="disclaimer">
+      — 本页面仅为说明与导航用途，不涉及直接服务 —
+    </div>
+
+  </div>
+</body>
+</html>
