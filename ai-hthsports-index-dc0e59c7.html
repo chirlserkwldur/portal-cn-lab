@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品说明 · 华体会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #faf7f2;
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            line-height: 1.7;
+            color: #2e2b26;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #fffcf7;
+            padding: 3.2rem 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            border: 1px solid #efe9e0;
+        }
+        h1, h2, h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+            color: #3f3a33;
+            border-left: 6px solid #c4a88b;
+            padding-left: 1.2rem;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #7f756c;
+            margin-bottom: 2.2rem;
+            border-bottom: 1px dashed #e2d7cb;
+            padding-bottom: 1rem;
+        }
+        .hero-note {
+            background: #f3ede6;
+            padding: 1.8rem 2rem;
+            border-radius: 16px;
+            margin: 2rem 0 2.5rem 0;
+            font-style: normal;
+            border-left: 4px solid #b59d86;
+        }
+        .hero-note p {
+            margin-bottom: 0.2rem;
+        }
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 2.5rem 0 2rem 0;
+        }
+        .card {
+            flex: 1 1 200px;
+            background: #fcf9f5;
+            padding: 1.6rem 1.4rem;
+            border-radius: 18px;
+            border: 1px solid #e9dfd4;
+            transition: all 0.2s ease;
+        }
+        .card:hover {
+            background: #f9f2ea;
+            border-color: #cbb7a2;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #504840;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #5c544b;
+        }
+        .usage-box {
+            background: #f5efe8;
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+            margin: 2.2rem 0;
+        }
+        .usage-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.6rem;
+            color: #3f3a33;
+        }
+        .usage-box ul {
+            list-style: none;
+            padding-left: 0.4rem;
+        }
+        .usage-box li {
+            padding: 0.5rem 0 0.5rem 1.8rem;
+            position: relative;
+            color: #4f4840;
+        }
+        .usage-box li::before {
+            content: "·";
+            position: absolute;
+            left: 0.2rem;
+            font-size: 1.6rem;
+            color: #b59d86;
+            line-height: 1.2;
+        }
+        .tip-block {
+            background: #fff7ef;
+            border: 1px solid #e4d6c6;
+            border-radius: 14px;
+            padding: 1.2rem 1.8rem;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            color: #5b5147;
+        }
+        .tip-block strong {
+            color: #6b5f53;
+            font-weight: 600;
+        }
+        .faq-summary {
+            margin-top: 2.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2d7cb;
+        }
+        .faq-summary details {
+            margin-bottom: 0.8rem;
+            padding: 0.6rem 0.2rem;
+            border-bottom: 1px dashed #ede3d7;
+        }
+        .faq-summary summary {
+            cursor: pointer;
+            font-weight: 500;
+            color: #4b443b;
+            padding: 0.3rem 0;
+        }
+        .faq-summary summary:hover {
+            color: #7a6b5b;
+        }
+        .faq-summary p {
+            margin-top: 0.4rem;
+            color: #5f574e;
+            font-size: 0.95rem;
+            padding-left: 0.8rem;
+        }
+        .inline-link {
+            color: #7a6b5b;
+            text-decoration: none;
+            border-bottom: 1px dotted #b7a693;
+            transition: border 0.2s, color 0.2s;
+        }
+        .inline-link:hover {
+            color: #4f3f31;
+            border-bottom: 1px solid #7a6b5b;
+        }
+        .footer-note {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #9e9489;
+            border-top: 1px solid #ece3d8;
+            padding-top: 1.8rem;
+            letter-spacing: 0.02em;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+                padding-left: 0.8rem;
+            }
+            .highlight-grid {
+                flex-direction: column;
+            }
+            .card {
+                flex: 1 1 auto;
+            }
+            .hero-note {
+                padding: 1.2rem 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>关于产品的说明</h1>
+    <div class="subhead">从主题内容出发，梳理使用脉络</div>
+
+    <p style="margin-bottom: 1.2rem;">
+        在体育与互动内容逐渐融合的背景下，<a href="https://ai-hthsports.com" class="inline-link">华体会</a>所代表的并非单一功能入口，而是一组围绕赛事、社区与信息获取所构建的内容生态。不同于常见的平台式介绍，我们更倾向于从主题内容的逻辑出发，去理解它真正提供的东西——即围绕体育内容延伸出的信息流、讨论场域与活动可能。
+    </p>
+    <p style="margin-bottom: 1rem;">
+        无论是日常浏览赛事资讯，还是参与围绕特定运动展开的轻量互动，其背后都指向同一个核心：让内容本身成为连接的纽带。以下从摘要、亮点、使用场景与克制的提示几个层面展开说明。
+    </p>
+
+    <div class="hero-note">
+        <p><strong>摘要</strong> —— 华体会围绕体育内容展开，提供赛事资讯、社区讨论与活动组织工具。它并非一个泛娱乐化平台，而是将焦点放在运动主题的深度与连贯性上。</p>
+    </div>
+
+    <div class="highlight-grid">
+        <div class="card">
+            <h3>赛事资讯</h3>
+            <p>涵盖主流联赛与新兴赛事，内容以短讯、长文、赛后复盘等形式呈现，适合不同阅读习惯的使用者。</p>
+        </div>
+        <div class="card">
+            <h3>社区互动</h3>
+            <p>用户可以围绕特定比赛或运动员发起讨论，也能参与主题小组，形成有边界的交流空间。</p>
+        </div>
+        <div class="card">
+            <h3>轻量工具</h3>
+            <p>包括赛程提醒、数据对比、活动报名等模块，辅助内容消费向行动转化。</p>
+        </div>
+    </div>
+
+    <div class="usage-box">
+        <h3>使用建议</h3>
+        <ul>
+            <li>如果你希望跟进某一联赛的完整赛程与动态，可以先关注对应赛事话题标签，信息会按时间线聚合。</li>
+            <li>参与讨论时，建议先浏览社区已有的长帖或置顶内容，往往能快速了解当前讨论的焦点与规则。</li>
+            <li>利用活动模块可以创建或加入线下/线上运动相关聚会，适合寻找同好但不想被泛信息流打扰的使用者。</li>
+            <li>内容栏目更新节奏稳定，不必频繁刷新，设定每日一次查看习惯即可获得新鲜信息。</li>
+        </ul>
+    </div>
+
+    <div class="tip-block">
+        <strong>可信但克制的访问说明</strong> —— 
+        使用过程中请保持对信息来源的基本辨别，社区内容不代表官方立场。所有工具模块均基于自愿使用原则，不涉及财务交易或敏感数据收集。若遇到超出内容范畴的引导，建议暂停并参考平台公开规则。 
+        <a href="https://ai-hthsports.com" class="inline-link">华体会</a> 本身不承担用户自行发起活动的组织责任，请根据实际情况合理安排。
+    </div>
+
+    <div class="faq-summary">
+        <h3 style="font-weight:500; margin-bottom:0.8rem;">常见问题摘要</h3>
+        <details>
+            <summary>是否需要注册才能浏览内容？</summary>
+            <p>大部分赛事资讯与公共讨论区可以直接阅读，注册后可参与评论、订阅赛程及创建活动。</p>
+        </details>
+        <details>
+            <summary>内容更新频率如何？</summary>
+            <p>主要赛事期间每日会有多条动态，休赛期则以专题、复盘长文与社区话题为主，保持稳定但不轰炸。</p>
+        </details>
+        <details>
+            <summary>如何找到自己感兴趣的运动话题？</summary>
+            <p>可通过搜索栏或分类导航进入对应运动板块，每个板块都有置顶索引与活跃话题列表。</p>
+        </details>
+    </div>
+
+    <div class="footer-note">
+        <span>基于内容理解 · 温和使用</span><br>
+        <span style="font-size:0.8rem;">— 页面仅作介绍，不构成任何形式的引导或承诺 —</span>
+    </div>
+</div>
+</body>
+</html>
